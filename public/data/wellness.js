@@ -2,14 +2,14 @@ const WELLNESS = {
   menstrual: {
     phase:'menstrual', name:'생리기', emoji:'🩸', color:'#c97b8a',
     tagline:'몸이 쉬어가는 시간이에요',
-    hormone:{ desc:'에스트로겐·프로게스테론 모두 낮아요. 내부 에너지를 쓰는 시기예요.', levels:{ 에스트로겐:20, 프로게스테론:10, FSH:40, LH:15 } },
+    hormone:{ desc:'에스트로겐·프로게스테론 모두 낮아요.', levels:{ 에스트로겐:20, 프로게스테론:10, FSH:40, LH:15 } },
     mood:'피로감, 복통, 예민함. 충분한 휴식이 최우선이에요 💤',
     yoga:[
       { name:'발라아사나 (아이 자세)', sanskrit:'Balasana', benefit:'복부 압박 완화, 요통 이완', duration:'3분', emoji:'🧘', tip:'이마를 바닥에 대고 완전히 이완해요' },
       { name:'숩타 바다코나아사나', sanskrit:'Supta Baddha Konasana', benefit:'골반 열기, 생리통 완화', duration:'5분', emoji:'🦋', tip:'블랭킷으로 무릎을 받쳐도 좋아요' },
       { name:'비파리타 카라니', sanskrit:'Viparita Karani', benefit:'다리 부종 완화, 신경계 안정', duration:'10분', emoji:'🌙', tip:'벽에 다리를 올리고 눈을 감아요' },
     ],
-    meditation:{ title:'자기 자비 명상', duration:'10분', guide:'지금 내 몸이 하는 일에 감사를 보내세요. 자궁이 새로운 시작을 준비하고 있어요. 호흡을 따라 복부가 부드럽게 오르내리는 것을 느껴보세요.', music:'잔잔한 자연 소리', breathwork:'복식 호흡 — 4초 들숨, 6초 날숨' },
+    meditation:{ title:'자기 자비 명상', duration:'10분', guide:'지금 내 몸이 하는 일에 감사를 보내세요. 호흡을 따라 복부가 부드럽게 오르내리는 것을 느껴보세요.', music:'잔잔한 자연 소리', breathwork:'복식 호흡 — 4초 들숨, 6초 날숨' },
     diet:{
       focus:'철분 보충 · 항염증',
       meals:[
@@ -63,7 +63,9 @@ const WELLNESS = {
       { title:'30분 전신 필라테스', channel:'Move with Nicole', url:'https://www.youtube.com/watch?v=TKKc7R0Hxq4', duration:'30분', tag:'필라테스' },
       { title:'초급 HIIT 유산소', channel:'Heather Robertson', url:'https://www.youtube.com/watch?v=ml6cT4AZdqI', duration:'25분', tag:'HIIT' },
     ]},
-  },fertile: {
+  },
+
+  fertile: {
     phase:'fertile', name:'가임기', emoji:'🌿', color:'#4a9e72',
     tagline:'빛나는 절정의 시간이에요',
     hormone:{ desc:'에스트로겐 최고조! LH 급증 직전. 사회적 자신감과 매력이 최고점이에요.', levels:{ 에스트로겐:90, 프로게스테론:20, FSH:80, LH:75 } },
@@ -73,7 +75,7 @@ const WELLNESS = {
       { name:'활 자세', sanskrit:'Dhanurasana', benefit:'생식기관 자극, 에너지 순환', duration:'30초×3', emoji:'🏹', tip:'발목을 잡고 가슴을 높이 들어요' },
       { name:'낙타 자세', sanskrit:'Ustrasana', benefit:'심장 열기, 자신감', duration:'30초×3', emoji:'🐪', tip:'허리가 아닌 가슴으로 뒤로 젖혀요' },
     ],
-    meditation:{ title:'풍요 명상', duration:'10분', guide:'지금 이 순간 당신은 가장 빛나고 있어요. 온몸에서 따뜻한 빛이 퍼져나가는 것을 느껴보세요. 당신의 창의성, 아름다움, 힘에 연결되어보세요.', music:'업리프팅 바이노럴 비트', breathwork:'완전 호흡 — 복식→흉식→쇄골 순서로 가득 채우기' },
+    meditation:{ title:'풍요 명상', duration:'10분', guide:'지금 이 순간 당신은 가장 빛나고 있어요. 온몸에서 따뜻한 빛이 퍼져나가는 것을 느껴보세요.', music:'업리프팅 바이노럴 비트', breathwork:'완전 호흡 — 복식→흉식→쇄골 순서로 가득 채우기' },
     diet:{
       focus:'항산화 · 배란 지원',
       meals:[
@@ -106,7 +108,7 @@ const WELLNESS = {
       { name:'측면 플랭크', sanskrit:'Vasisthasana', benefit:'코어·팔 강화, 의지력', duration:'좌우 30초', emoji:'💪', tip:'발꿈치를 포개고 엉덩이를 높게 유지해요' },
       { name:'반달 자세', sanskrit:'Ardha Chandrasana', benefit:'균형, 에너지 확장', duration:'좌우 1분', emoji:'🌙', tip:'바닥 손가락 끝만 가볍게 짚어요' },
     ],
-    meditation:{ title:'파워 시각화 명상', duration:'12분', guide:'눈을 감고 오늘 가장 빛나는 자신의 모습을 생생하게 그려보세요. 목표를 이미 이룬 것처럼 느껴보고, 그 감정을 온몸에 새겨보세요.', music:'파워풀 오케스트라', breathwork:'박스 호흡 — 4초 들숨·정지·날숨·정지' },
+    meditation:{ title:'파워 시각화 명상', duration:'12분', guide:'눈을 감고 오늘 가장 빛나는 자신의 모습을 생생하게 그려보세요. 목표를 이미 이룬 것처럼 느껴보세요.', music:'파워풀 오케스트라', breathwork:'박스 호흡 — 4초 들숨·정지·날숨·정지' },
     diet:{
       focus:'배란 지원 · 항산화 최대화',
       meals:[
@@ -139,7 +141,7 @@ const WELLNESS = {
       { name:'다리 자세', sanskrit:'Setu Bandhasana', benefit:'자궁 순환 촉진, 피로 회복', duration:'1분×3', emoji:'🌉', tip:'발바닥으로 바닥을 밀어요' },
       { name:'레그스업 자세', sanskrit:'Viparita Karani', benefit:'다리 붓기, 신경계 진정', duration:'10분', emoji:'🌙', tip:'눈을 감고 완전히 내려놓아요' },
     ],
-    meditation:{ title:'자기 돌봄 명상', duration:'15분', guide:'지금 내 몸이 어떤지 조용히 스캔해보세요. 긴장된 곳은 없나요? 그 부분에 따뜻한 빛을 보내주세요. 내가 나에게 가장 좋은 친구가 되어주는 시간이에요.', music:'Lo-fi 힐링 음악', breathwork:'4-7-8 호흡 — 4초 들숨, 7초 정지, 8초 날숨' },
+    meditation:{ title:'자기 돌봄 명상', duration:'15분', guide:'지금 내 몸이 어떤지 조용히 스캔해보세요. 긴장된 곳에 따뜻한 빛을 보내주세요. 내가 나에게 가장 좋은 친구가 되어주는 시간이에요.', music:'Lo-fi 힐링 음악', breathwork:'4-7-8 호흡 — 4초 들숨, 7초 정지, 8초 날숨' },
     diet:{
       focus:'PMS 예방 · 혈당 안정',
       meals:[
