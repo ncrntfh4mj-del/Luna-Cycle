@@ -109,7 +109,8 @@ body{font-family:'DM Sans','Noto Serif KR',serif;background:var(--cream);color:v
 .btn-save{background:var(--rose-pale);border:1px solid var(--rose-light);border-radius:var(--radius-sm);padding:8px 20px;font-size:.8rem;color:var(--rose-gold);cursor:pointer;transition:var(--transition);}
 .btn-save:hover{background:var(--rose-gold);color:#fff;}
 .meditate-preview .med-title{font-family:'Cormorant Garamond',serif;font-size:1.1rem;color:var(--ink);margin-bottom:6px;}
-.meditate-preview .med-meta{font-size:.78rem;color:var(--ink-3);line-height:1.7;}.section-block{margin-bottom:40px;}
+.meditate-preview .med-meta{font-size:.78rem;color:var(--ink-3);line-height:1.7;}
+.section-block{margin-bottom:40px;}
 .section-h2{font-family:'Cormorant Garamond',serif;font-size:1.4rem;font-weight:400;color:var(--ink);margin-bottom:20px;padding-bottom:10px;border-bottom:1px solid var(--cream-3);}
 .asana-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:16px;}
 .asana-card{background:var(--white);border:1px solid var(--cream-3);border-radius:var(--radius);padding:22px;box-shadow:var(--shadow-sm);transition:var(--transition);}
@@ -193,7 +194,7 @@ body{font-family:'DM Sans','Noto Serif KR',serif;background:var(--cream);color:v
 .dot.luteal{background:var(--l-c);}
 .dot.next-period{background:none;border:1.5px dashed var(--n-c);}
 .cal-grid-wrap{background:var(--white);border:1px solid var(--cream-3);border-radius:var(--radius);padding:24px;margin-bottom:20px;}
-.cal-weekdays{display:grid;grid-template-columns:repeat(7,1fr);margin-bottom:8px;}
+.cal-weekdays{display:grid;grid-template-columns:repeat(7,1fr);gap:4px;margin-bottom:8px;}
 .cal-weekdays span{text-align:center;font-size:.72rem;color:var(--ink-3);padding:5px;letter-spacing:.5px;}
 .cal-weekdays span:first-child{color:var(--m-c);}
 .cal-weekdays span:last-child{color:var(--f-c);}
