@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Luna Cycle — 나의 웰니스 대시보드</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Noto+Serif+KR:wght@300;400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="/css/style.css"/>
+</head>
+<body>
+
+<nav class="sidebar" id="sidebar">
+  <div class="sidebar-logo">
+    <span class="logo-moon">☽</span>
+    <div>
+      <div class="logo-name">Luna Cycle</div>
+      <div class="logo-sub">루나사이클</div>
+    </div>
+  </div>
+  <ul class="nav-list">
+    <li><a href="#" class="nav-item active" data-page="dashboard"><span class="nav-icon">◎</span><span class="nav-label">대시보드</span></a></li>
+    <li><a href="#" class="nav-item" data-page="yoga"><span class="nav-icon">🧘</span><span class="nav-label">요가 & 명상</span></a></li>
+    <li><a href="#" class="nav-item" data-page="nutrition"><span class="nav-icon">🥗</span><span class="nav-label">식단 & 영양제</span></a></li>
+    <li><a href="#" class="nav-item" data-page="journal"><span class="nav-icon">📓</span><span class="nav-label">기분 저널</span></a></li>
+    <li><a href="#" class="nav-item" data-page="calendar"><span class="nav-icon">◑</span><span class="nav-label">주기 캘린더</span></a></li>
+    <li><a href="#" class="nav-item" data-page="settings"><span class="nav-icon">⚙</span><span class="nav-label">설정</span></a></li>
+  </ul>
+  <div class="sidebar-phase" id="sidebarPhase"></div>
+</nav>
+
+<header class="topbar">
+  <button class="menu-btn" id="menuBtn">☰</button>
+  <div class="topbar-logo">☽ Luna Cycle</div>
+  <div class="topbar-phase" id="topbarPhase"></div>
+</header>
+
+<main class="main-content">
+
+  <section class="page active" id="page-dashboard">
+    <div class="page-header">
+      <div>
+        <p class="page-greeting" id="greeting"></p>
+        <h1 class="page-title" id="todayDate"></h1>
+      </div>
+      <div class="phase-hero" id="phaseHero"></div>
+    </div>
+    <div class="week-strip" id="weekStrip"></div>
+    <div class="dash-grid">
+      <div class="dash-card dash-phase" id="dashPhaseCard">
+        <div class="card-label">오늘의 주기</div>
+        <div class="phase-info" id="phaseInfo"></div>
+        <div class="hormone-mini" id="hormoneMini"></div>
+      </div>
+      <div class="dash-card dash-dday" id="dashDday">
+        <div class="card-label">다음 일정</div>
+        <div class="dday-content" id="ddayContent"></div>
+      </div>
+      <div class="dash-card dash-mood">
+        <div class="card-label">오늘 기분은요?</div>
+        <div class="mood-emojis" id="moodEmojis">
+          <button class="mood-btn" data-mood="😊" data-label="좋아요">😊</button>
+          <button class="mood-btn" data-mood="😌" data-label="평온해요">😌</button>
+          <button class="mood-btn" data-mood="😔" data-label="우울해요">😔</button>
+          <button class="mood-btn" data-mood="😤" data-label="예민해요">😤</button>
+          <button class="mood-btn" data-mood="😴" data-label="피곤해요">😴</button>
+          <button class="mood-btn" data-mood="🤗" data-label="활기차요">🤗</button>
+        </div>
+        <div class="mood-selected" id="moodSelected"></div>
+      </div>
+      <div class="dash-card dash-yoga" id="dashYoga">
+        <div class="card-label">오늘의 요가</div>
+        <div class="yoga-preview" id="yogaPreview"></div>
+        <button class="card-cta" data-page="yoga">전체 루틴 보기 →</button>
+      </div>
+      <div class="dash-card dash-diet" id="dashDiet">
+        <div class="card-label">오늘의 식단</div>
+        <div class="diet-preview" id="dietPreview"></div>
+        <button class="card-cta" data-page="nutrition">전체 식단 보기 →</button>
+      </div>
+      <div class="dash-card dash-supps" id="dashSupps">
+        <div class="card-label">영양제 체크</div>
+        <div class="supp-checks" id="suppChecks"></div>
+      </div>
+      <div class="dash-card dash-journal">
+        <div class="card-label">오늘의 한 줄</div>
+        <textarea class="journal-quick" id="journalQuick" placeholder="오늘 몸과 마음은 어때요?"></textarea>
+        <button class="btn-save" id="journalSave">저장 ✓</button>
+      </div>
+      <div class="dash-card dash-meditate" id="dashMeditate">
+        <div class="card-label">오늘의 명상</div>
+        <div class="meditate-preview" id="meditatePreview"></div>
+        <button class="card-cta" data-page="yoga">명상 시작 →</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="page" id="page-yoga">
+    <div class="page-header">
+      <div><p class="page-greeting">오늘 내 몸에 맞는</p><h1 class="page-title">요가 & 명상</h1></div>
+    </div>
+    <div class="yoga-page">
+      <div class="section-block">
+        <h2 class="section-h2" id="yogaSectionTitle"></h2>
+        <div class="asana-grid" id="asanaGrid"></div>
+      </div>
+      <div class="section-block">
+        <h2 class="section-h2">오늘의 명상</h2>
+        <div class="meditation-card" id="meditationCard"></div>
+      </div>
+      <div class="section-block">
+        <h2 class="section-h2">오늘의 운동 영상</h2>
+        <div class="video-list" id="videoList"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="page" id="page-nutrition">
+    <div class="page-header">
+      <div><p class="page-greeting">호르몬에 맞는</p><h1 class="page-title">식단 & 영양제</h1></div>
+    </div>
+    <div class="nutrition-page">
+      <div class="section-block">
+        <h2 class="section-h2" id="dietSectionTitle"></h2>
+        <div class="meal-grid" id="mealGrid"></div>
+        <div class="avoid-box" id="avoidBox"></div>
+      </div>
+      <div class="section-block">
+        <h2 class="section-h2">오늘의 영양제</h2>
+        <div class="supp-full-list" id="suppFullList"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="page" id="page-journal">
+    <div class="page-header">
+      <div><p class="page-greeting">내 감정을 기록하는</p><h1 class="page-title">기분 저널</h1></div>
+    </div>
+    <div class="journal-page">
+      <div class="journal-entry-area">
+        <div class="journal-meta" id="journalMeta"></div>
+        <div class="symptom-track">
+          <p class="symptom-title">오늘 증상 체크</p>
+          <div class="symptom-chips" id="symptomChips">
+            <button class="chip" data-sym="두통">두통</button>
+            <button class="chip" data-sym="피로">피로</button>
+            <button class="chip" data-sym="붓기">붓기</button>
+            <button class="chip" data-sym="복통">복통</button>
+            <button class="chip" data-sym="소화불량">소화불량</bu
