@@ -27,8 +27,8 @@ const WELLNESS = {
       { name:'비타민 B6', dose:'50mg', timing:'아침', reason:'기분 조절, 피로 완화', emoji:'🟡' },
     ],
     workout:{ intensity:'낮음', focus:'가볍게, 따뜻하게', videos:[
-      { title:'생리통 완화 요가 10분', channel:'Yoga with Adriene', url:'https://www.youtube.com/watch?v=KmEJoKsZPaQ', duration:'10분', tag:'요가' },
-      { title:'누워서 하는 스트레칭', channel:'MommaStrong', url:'https://www.youtube.com/watch?v=qULTwquOuT4', duration:'15분', tag:'스트레칭' },
+      { title:'생리통·PMS 완화 요가', channel:'Yoga with Adriene', url:'https://www.youtube.com/watch?v=4JaCcp39iVI', duration:'10분', tag:'요가' },
+      { title:'누워서 하는 전신 스트레칭', channel:'Kassandra', url:'https://www.youtube.com/watch?v=Sc4mA_-efdE', duration:'15분', tag:'스트레칭' },
     ]},
   },
 
@@ -60,8 +60,8 @@ const WELLNESS = {
       { name:'프로바이오틱스', dose:'10억 CFU', timing:'공복', reason:'장-호르몬 축 균형', emoji:'🦠' },
     ],
     workout:{ intensity:'중간~높음', focus:'새로운 루틴 도전하기 좋아요', videos:[
-      { title:'30분 전신 필라테스', channel:'Move with Nicole', url:'https://www.youtube.com/watch?v=TKKc7R0Hxq4', duration:'30분', tag:'필라테스' },
-      { title:'초급 HIIT 유산소', channel:'Heather Robertson', url:'https://www.youtube.com/watch?v=ml6cT4AZdqI', duration:'25분', tag:'HIIT' },
+      { title:'초보자 전신 필라테스 30분', channel:'Pilates', url:'https://www.youtube.com/watch?v=QW_0H-5udr0', duration:'30분', tag:'필라테스' },
+      { title:'초급 전신 HIIT 25분', channel:'Heather Robertson', url:'https://www.youtube.com/watch?v=cbKkB3POqaY', duration:'25분', tag:'HIIT' },
     ]},
   },
 
@@ -93,8 +93,8 @@ const WELLNESS = {
       { name:'오메가3', dose:'1000mg', timing:'식사 중', reason:'자궁 혈류 개선', emoji:'🐟' },
     ],
     workout:{ intensity:'높음', focus:'최고의 퍼포먼스! 강도 높은 운동도 거뜬해요', videos:[
-      { title:'45분 댄스 유산소', channel:'Zumba Fitness', url:'https://www.youtube.com/watch?v=CLyGRSuLYMs', duration:'45분', tag:'댄스' },
-      { title:'바디웨이트 서킷', channel:'Heather Robertson', url:'https://www.youtube.com/watch?v=vc1E5CfRfos', duration:'35분', tag:'근력' },
+      { title:'댄스 유산소 30분', channel:'Fitness Heaven', url:'https://www.youtube.com/watch?v=vngqe0SDRcQ', duration:'30분', tag:'댄스' },
+      { title:'고강도 전신 HIIT 30분', channel:'Heather Robertson', url:'https://www.youtube.com/watch?v=f8GzCmbz6YY', duration:'30분', tag:'HIIT' },
     ]},
   },
 
@@ -126,8 +126,8 @@ const WELLNESS = {
       { name:'오메가3', dose:'1000mg', timing:'식사 중', reason:'프로스타글란딘 균형', emoji:'🐟' },
     ],
     workout:{ intensity:'높음', focus:'개인 기록 세우기 좋은 날', videos:[
-      { title:'30분 전신 근력 운동', channel:'Heather Robertson', url:'https://www.youtube.com/watch?v=UBMk30rjy0o', duration:'30분', tag:'근력' },
-      { title:'고강도 카디오', channel:'Sydney Cummings', url:'https://www.youtube.com/watch?v=Mvo2snJGhtM', duration:'40분', tag:'HIIT' },
+      { title:'전신 근력 + 유산소 30분', channel:'Heather Robertson', url:'https://www.youtube.com/watch?v=LevY_cW5aek', duration:'30분', tag:'근력' },
+      { title:'노 리피트 전신 HIIT 35분', channel:'Heather Robertson', url:'https://www.youtube.com/watch?v=2zQ89vkNnNg', duration:'35분', tag:'HIIT' },
     ]},
   },
 
@@ -159,8 +159,8 @@ const WELLNESS = {
       { name:'칼슘', dose:'500mg', timing:'저녁 식사 후', reason:'PMS 증상 50% 감소', emoji:'🦴' },
     ],
     workout:{ intensity:'중간', focus:'스트레스 해소 + 부종 완화', videos:[
-      { title:'PMS 완화 요가', channel:'Yoga with Adriene', url:'https://www.youtube.com/watch?v=3CwbP3oSnh0', duration:'25분', tag:'요가' },
-      { title:'저강도 유산소 걷기', channel:'Walk at Home', url:'https://www.youtube.com/watch?v=enLAHpFD2b0', duration:'30분', tag:'걷기' },
+      { title:'PMS 완화 요가 (인기영상)', channel:'Yoga with Adriene', url:'https://www.youtube.com/watch?v=PYbhN9KBDwE', duration:'20분', tag:'요가' },
+      { title:'저강도 유산소 워킹 30분', channel:'Walk at Home', url:'https://www.youtube.com/watch?v=cvEJ5WFk2KE', duration:'30분', tag:'걷기' },
     ]},
   },
 };
